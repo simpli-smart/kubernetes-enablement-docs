@@ -70,7 +70,7 @@ curl -X GET "https://api.app.simplismart.ai/deployments/list/model/?model_repo_i
 | `FAILED` | Deployment creation failed |
 | `DELETED` | Deployment has been deleted |
 | `DELETING` | Deployment is being deleted |
-| `SCALED_DOWN` | Deployment is paused (stopped) |
+| `SCALED_DOWN` | Deployment is paused (stopped) or scaled to zero |
 
 ---
 
@@ -133,7 +133,7 @@ curl -X GET "https://api.app.simplismart.ai/deployments/model-deployment/fetch-s
 | `Degraded` | Partially unhealthy |
 | `Unhealthy` | Not functioning correctly |
 | `Unknown` | Status could not be determined |
-| `SCALED_DOWN` | Deployment is paused |
+| `SCALED_DOWN` | Deployment is paused or scaled to zero |
 | `Missing` | Health data unavailable |
 
 ### Example: Scaled Down Deployment

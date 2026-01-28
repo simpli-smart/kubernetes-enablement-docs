@@ -107,7 +107,7 @@ See [Deployment Lifecycle](../deployments/lifecycle.md#get-deployment-health) fo
 | `Initializing` | Deployment is starting up | Wait for pods to become ready |
 | `Degraded` | Some pods are unhealthy | Investigate pod logs |
 | `Unhealthy` | Deployment is not functioning | Check configuration and logs |
-| `SCALED_DOWN` | Deployment is paused | Start deployment if needed |
+| `SCALED_DOWN` | Deployment is paused or scaled to zero | Start deployment if needed |
 | `Unknown` | Status cannot be determined | Contact support |
 | `Missing` | Health data unavailable | Check cluster connectivity |
 

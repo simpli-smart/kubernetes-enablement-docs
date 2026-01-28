@@ -61,7 +61,7 @@ See [Deployment Lifecycle](../deployments/lifecycle.md#get-deployment-health) fo
 | `Initializing` | Starting up | New deployment, restart |
 | `Degraded` | Partially unhealthy | Some pods failing probes |
 | `Unhealthy` | Not functioning | All pods failing, misconfig |
-| `SCALED_DOWN` | Intentionally paused | Manual stop, scale-to-zero |
+| `SCALED_DOWN` | Intentionally paused or scaled to zero | Manual stop, scale-to-zero |
 | `Unknown` | Cannot determine | Connectivity issues |
 | `Missing` | No health data | Metrics collection failure |
 
