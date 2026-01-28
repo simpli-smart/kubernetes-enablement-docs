@@ -126,7 +126,7 @@ Autoscaling is **required** for all private deployments.
 { "autoscale_config": { "targets": [] } }
 
 // ❌ Invalid metric
-{ "autoscale_config": { "targets": [{ "metric": "latency", "target": 200, "percentile": 95 }] } }
+{ "autoscale_config": { "targets": [{ "metric": "unsupported-metric", "target": 200 }] } }
 
 // ❌ Invalid percentile
 { "autoscale_config": { "targets": [{ "metric": "latency", "target": 200, "percentile": 100 }] } }
