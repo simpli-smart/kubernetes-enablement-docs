@@ -1,6 +1,6 @@
 # Simplismart Platform Documentation
 
-**AI Infrastructure Platform for LLM Deployment & Optimization**
+**AI Infrastructure Platform for end-to-end MLOps management**
 
 Simplismart provides a comprehensive platform for deploying, managing, and scaling machine learning models, on Kubernetes infrastructure. Whether you're using Simplismart's managed cloud or bringing your own compute, this documentation covers everything you need to get started.
 
