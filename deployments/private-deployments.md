@@ -55,9 +55,9 @@ curl -X POST "https://api.app.simplismart.ai/deployments/private/deploy-model/" 
 | `persistent_volume_claims` | array | — | PVC configuration (only for custom models and imported containers) |
 | `env_variables` | object | — | Environment variables (only for imported containers) |
 | `deployment_custom_configuration` | object | — | Command/runtime overrides (only for imported containers) |
-| `healthcheck` | object | Pod health check configuration (only for imported containers) |
-| `ports` | object | Exposed service ports (only for imported containers) |
-| `advanced_configuration` | object | Advanced configuration (only for async deployments) |
+| `healthcheck` | object | — | Pod health check configuration (only for imported containers) |
+| `ports` | object | — | Exposed service ports (only for imported containers) |
+| `advanced_configuration` | object | — | Advanced configuration (only for async deployments) |
 
 ### Available GPUs
 
@@ -113,8 +113,8 @@ Autoscaling is **required** for all private deployments.
   - `metric`: One of `cpu`, `gpu`, `ram`, `gram`, `latency`, `throughput`, `concurrency`, `queue_length`
   - `target`: An integer
   - `percentile`: Optional and is used for latency metrics (p50: 50, p75: 75, p90: 90, p95: 95)
-  - `queue_length`: Only available for async deployments
-  - `cooldown_period`: Only available for scale to zero deployments
+- `queue_length`: Only available for async deployments
+- `cooldown_period`: Only available for scale to zero deployments
 
 ### Invalid Examples
 
